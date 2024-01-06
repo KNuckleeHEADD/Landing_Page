@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,500;0,600;1,400;1,600&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background: url("BG.png");
+    background-size: cover; /* or use 'contain' depending on your preference */
+    background-repeat: no-repeat;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+nav , .nav_links{
+    display: flex;
+    /* align-items: center; */
+    /* this is used to put the items in a flexbox so that they can be put side by side */
+}
+
+nav{
+    justify-content: space-around;
+    /* this property will basically give space around items */
+    height: 17vh;
+    /* one whole page is consider as 100 view height(vh) , so first 18 vh is given to this nav and in this 18 it will be aligned at half */
+}
+
+
+.nav_links{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    margin-top: 2rem;
+    list-style: none;
+    gap: 2rem;
+    font-size: 1.5rem;
+    margin-right: 30rem;
+}
+
+a{
+    color: var(--secondary-color);
+    text-decoration: none;
+    text-decoration-color: var(--primary-color);
+}
+
+a:hover{
+    text-decoration: underline;
+    font-size: smaller;
+    transition: transform 3s smooth;
+    text-underline-offset: 1rem;
+    text-decoration-color: var(--secondary-color)
+    /* transform: scale(1.5); */
+}
+
+.logo {
+    margin-right: auto; /* Pushes the logo to the left */
+}
+
+.logo-img {
+    position: absolute;
+    margin-left: 5rem;
+    margin-top: 0;
+    height: 6rem;
+    width: 7rem;
+}
+
+.loginbtn-wrapper {
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-right: 5rem;
+}
+
+.signup-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    background-color: black;
+    border: 2px solid grey;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Added transform property for rotation */
+}
+
+.signup-btn:hover {
+    background-color: black;
+    border-color: white;
+    transform:  rotateZ(360deg);
+}
+
+#home{
+    display: flex;
+    justify-content: space-around;
+    height: 80vh;
+    align-items: center;
+}
+
+
+
+.home-text{
+    width: fit-content;
+}
+
+
+.body1-fonts{
+    font-family: 'Jost', sans-serif;
+    font-weight: 700;
+    width: 650px;
+    font-size: 60px;
+    color: #473525E5;
+}
+
+.body2-fonts{
+    font-family: 'Jost', sans-serif;
+    font-weight: 700;
+    width: 500px;
+    font-size: 14.5px;
+}
+
+.btn_container{
+    margin-top: 1rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.button{
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+}
+
+.one{
+    color: white;
+    background: #705d45;
+    border-color: black;
+    border-radius: 4rem;
+}
+
+.one:hover , .two:hover{
+    cursor: pointer;
+}
+
+.one:hover{
+    color: black;
+    background-color: white;
+}
+
+.two:hover{
+    background-color: #705d45;
+    color: white;
+}
+
+#features {
+    display: flex; /* or flex-start */
+    height: 100vh;
+    align-items: center;
+    box-sizing: border-box;
+    gap: 5rem;
+}
+  
+
+.feature-text-wrapper{
+    margin-left: 5rem;
+    width: fit-content;
+}
+
+.feature-img-wrapper {
+    /* border: 2px solid blue; */
+    gap: 5rem;
+    display: flex; /* Adjust the values as needed */
+}
+
+
+
+.feature-img-wrap{
+    height: 382.54px;
+    width: 283.65px;
+    background-color: #febc49;
+    border-radius: 4rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.special{
+    margin-top: 8rem;
+}
+
+.body3-fonts{
+    font-family: 'Jost', sans-serif;
+    font-weight: 700;
+    width: 300px;
+    font-size: 50px;
+    color: #473525E5;
+}
+
+.body4-fonts{
+    font-family: 'Jost', sans-serif;
+    font-weight: 200;
+    width: 500px;
+    font-size: 17px;
+}
+
+#menu {
+    display: flex; /* or flex-start */
+    height: 100vh;
+    gap: 5rem;
+    border: 2px solid blue;
+}
+
+.menu-wrapper{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid red;
+    margin-left: 5rem;
+}
+
+.menu-img-wrapper{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+
+.menu-img-wrap{
+    width: 454.18px;
+    height: 515.17px;
+    border-radius: 4rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    background-color: #f1c87f;
+}
+
+.body5-fonts{
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    font-family: 'Jost', sans-serif;
+    width: 500.01px;
+    height: 165.49px;
+    border: 2px solid white;
+    color:#473525E5;
+    font-weight: 700;
+    font-size: 60px;
+}
+.body6-fonts{
+    font-weight: 700;
+    margin-left: 1.5rem;
+    font-size: 30px;
+    color: #473525E5;
+    font-family: 'Martel Sans', sans-serif;
+}
+
+
