@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>moye moye</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sty.css">
+    <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
     <nav id = "desktop_nav"> 
@@ -34,8 +35,8 @@
     <!-- </marquee> -->
     <section id = "home">
         <div class = "home-text">
-            <p class = "body1-fonts">Revitalize Your Routine, Fresh, Fruity, Fantastic!</p>
-            <p class = "body2-fonts">"Savor the Symphony of Flavors, with Nature's Sweetness & deliciousness. Get the best variety of juices here!”</p>
+            <div class = "body1-fonts">Revitalize Your Routine, Fresh, Fruity, Fantastic!</div>
+            <div class = "body2-fonts">"Savor the Symphony of Flavors, with Nature's Sweetness & deliciousness. Get the best variety of juices here!”</div>
             <div class = "btn_container">
                 <button class = "button one">
                     View Menu
@@ -57,13 +58,13 @@
         </div>
         <div class = "feature-img-wrapper">
             <div class = "feature-img-wrap">
-                <img src = "Pineapple.png" alt = "Image imageBackground" class = "fruit-img" height = "304px" width = "273px" style = "padding-left: 1.2rem; margin-top: 2.5rem">
+                <img src = "Pineapple.png" alt = "Image imageBackground">
             </div>
             <div class = "feature-img-wrap special">
-                <img src = "Grapes (1).png" alt = "Image imageBackground" class = "fruit-img" height = "298px" width = "89px" style = "padding-left: 6.2rem; margin-top: 2.5rem"/>
+                <img src = "Pineapple.png" alt = "Image imageBackground">
             </div>
             <div class = "feature-img-wrap">
-                <img src = "Pineapple.png" alt = "Image imageBackground" class = "fruit-img" style = "padding-left: 1.2rem; margin-top: 2.5rem"/>
+                <img src = "Pineapple.png" alt = "Image imageBackground"/>
             </div>
         </div>
     </section>
@@ -75,21 +76,48 @@
             </div>
             <div class = "menu-img-wrapper">
                 <div class = "menu-img-wrap">
-                    <img src = "Heart Group -- 1.png" style = "margin-right: 0; margin-top: 0;" height = "
-                    73.88px" width = "88.6px"/>
-                    <img src = "MANGO.png"/>
+                    <img src = "MANGO.png"  class = "fruit-img"/>
                     <p class = "body6-fonts">Mango Bliss Burst</p>
                 </div>
                 <div class = "menu-img-wrap">
-                    <img src = "KIWI IMAGE.png"/>
+                    <img src = "KIWI IMAGE.png" class = "fruit-img"/>
                     <p class = "body6-fonts">Pure Kiwi Joy</p>
                 </div>
                 <div class = "menu-img-wrap">
-                    <img src = "raspberyy.png"/>
+                    <img src = "raspberyy.png" class = "fruit-img"/>
                     <p class = "body6-fonts">Berry Burst Bliss</p>
                 </div>
             </div>
         </div>
     </section>
+
+    <section id = "contact">
+        <div class = "form-wrapper">
+            <div class = "form-text-wrap">
+                <p class = "body3-fonts">Contact Us</p>
+                <p class = "body4-fonts">Send us a message</p>
+            </div>
+            <div class = "form-wrap">
+                <input type = "text" id = "full-name" placeholder="Full Name"/>
+                <input type = "email" id = "email" placeholder="Email"/>
+                <input type = "text" id = "message" placeholder = "Your Message..."/>
+                <input type = "submit" id = "btn" placeholder="Submit"/>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <div class = "footer-container">
+                <ul class="foot-link">
+                    <li><a href = "#home">Home</a></li>
+                    <li><a href = "#features">Features</a></li>
+                    <li><a href = "#menu">Menu</a></li>
+                    <li><a href = "#contact">Contact</a></li> 
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2023 Gourav Subnani. All Rights Reserved</p>
+    </footer>
 </body>
 </html>
